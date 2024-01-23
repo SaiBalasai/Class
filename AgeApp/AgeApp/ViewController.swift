@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+
+    @IBOutlet weak var inputOl: UITextField!
     @IBOutlet weak var input: UITextField!
     @IBOutlet weak var Output: UILabel!
     override func viewDidLoad() {
@@ -19,7 +21,8 @@ class ViewController: UIViewController {
 
     @IBAction func submitBtnClicked(_ sender: Any) {
         var ip = input.text!
-        Output.text = "Your age \(ip)"
+        var i = inputOl.text!
+        Output.text = "\(i) age  is \(ip)"
     }
 }
 
